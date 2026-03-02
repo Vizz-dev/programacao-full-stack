@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+@font-face {
+    font-family: 'index';
+    src: url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+25&display=swap');
+}
+
+:root{
+
+    --cor01: #9dbae1;
+    --cor02: #002175;
+    --cor03: #2c73e6;
+    --cor04: #5c7fdf;
+    --cor05: aliceblue;
+    --fonte-padrão: 'index', arial;
+    --font-destaque: 'Jersey 15', sans-serif;
+    color: aliceblue;
+
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor02);
+    font-family: var(--font-destaque);
+    
+}
+
+header{
+    background-color: var(--cor04);
+    text-align: center;
+
+}
+nav{
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.304);
+    text-align: center;
+    
+}
+
+nav > a{
+
+    color: var(--cor04);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+    border-radius: 20px;
+
+}
+
+nav > a:hover{
+    background-color: var(--cor05);
+    color: var(--cor02);
+
+}
+
+main{
+background-color: var(--cor05);
+color: var(--cor02);
+border-radius: 8px;
+height: auto;
+text-align: justify;
+min-width: 300px;
+max-width: 800px;
+margin: auto;
+margin-bottom: 30px;
+padding: 10px 10px 10px 10px;
+
+}
+article > img{
+
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    
+
+}
+
+
+section.imagem > p{
+    
+    display: inline-block;
+    color: var(--cor05);
+    
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.456);
+    margin: auto;
+    text-align: left;
+    background-size: cover;
+    padding: 125px;
+    
+
+}
+section#img01{
+    background-repeat: no-repeat;
+    margin: auto;
+    background-position: center bottom;
+    background-image: url('../sistema\ solar.svg');
+    background-attachment: fixed;
+    padding-bottom: -2em;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.503);
+}
+
+footer{
+    text-align: center;
+    font-weight: lighter;
+    padding: 5px;
+    background-color: var(--cor02);
+
+}
+
+footer > a{
+    text-decoration: none;
+    color: white;
+}
